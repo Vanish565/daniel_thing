@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Valentine’s Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section">
+        <h1>Our Journey Together</h1>
+        <p>Every moment with you feels like magic. Let's relive it.</p>
+        <button onclick="nextSection('welcome', 'firstMeeting')">Next</button>
+    </section>
+
+    <!-- First Meeting Section -->
+    <section id="firstMeeting" class="section" style="display:none;">
+        <img src="our_first_meeting.jpg" alt="First Meeting">
+        <p>The moment we met...</p>
+        <button onclick="nextSection('firstMeeting', 'firstAdventure')">Next</button>
+    </section>
+
+    <!-- First Adventure Section -->
+    <section id="firstAdventure" class="section" style="display:none;">
+        <img src="our_first_adventure.jpg" alt="Our First Adventure">
+        <p>The start of countless adventures...</p>
+        <button onclick="nextSection('firstAdventure', 'favoriteMemory')">Next</button>
+    </section>
+
+    <!-- Favorite Memory Section -->
+    <section id="favoriteMemory" class="section" style="display:none;">
+        <div class="photo-collage">
+            <img src="fav_moment.jpg" alt="Memory 1">
+            <img src="fav_moment2.jpg" alt="Memory 2">
+            <img src="fav_moment3.jpg" alt="Memory 3">
+        </div>
+        <p>Every moment with you feels like my favorite. But these ones stands out...</p>
+        <button onclick="nextSection('favoriteMemory', 'bigQuestion')">Next</button>
+    </section>
+
+    <!-- Big Question Section -->
+    <section id="bigQuestion" class="section" style="display:none;">
+        <h2>Will you make me the happiest person and be my Valentine?</h2>
+        <button onclick="nextSection('bigQuestion', 'celebration')">Yes!</button>
+    </section>
+
+    <!-- Celebration Section -->
+    <section id="celebration" class="section" style="display:none;">
+        <h2>Yay! I knew you'd say yes!</h2>
+        <img src="last_image.jpg" alt="Celebration" id="celebrationImage">
+        <p>How lucky I am to have you by my side, my girl. Every moment with you is a gift. Here's to a lifetime of memories and adventures together! 💕</p>
+        <button onclick="startOver()">Start Over</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
